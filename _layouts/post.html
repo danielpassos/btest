@@ -13,9 +13,10 @@ layout: default
     </h1>
     <div class='flex flex-wrap items-center text-sm text-text-secondary dark:text-text-secondary-dark gap-4'>
       <span class='flex items-center gap-1'>
-        📁<a href='/categories/{{ page.category | slugify }}' class='hover:underline' rel='tag'>
-          {{ page.category }}
-        </a>
+        📁
+        {% for category in page.categories %}
+        <a href='/categories/{{ category | slugify }}'>{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
       </span>
       <time class='flex items-center gap-1' datetime='{{ page.date }}' itemprop='datePublished'>
         🗓️ {{ page.date | date: "%B %-d, %Y" }}
@@ -28,7 +29,7 @@ layout: default
   <footer class='mt-8'>
     <div class='flex flex-wrap gap-2'>
       {% for tag in page.tags %}
-      <a href='/tags/{{ tag | slugify }}' class='tag-badge' rel='tag'>{{ tag }}</a>
+      <a href='/tag/{{ tag | slugify }}' class='tag-badge' rel='tag'>{{ tag }}</a>
       {% endfor %}
     </div>
   </footer>

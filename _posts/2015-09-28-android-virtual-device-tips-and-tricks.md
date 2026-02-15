@@ -4,7 +4,7 @@ date: '2015-09-28'
 cover: "/images/posts/android-virtual-device-tips-and-tricks/cover"
 title: "Android Virtual Device tips and tricks"
 summary: "One of the Android Developer's best friends is the emulator (aka AVD). It allows us to simulate some behaviors, like calling, sending SMS messages, simulate a specific location and much more."
-category: "Android"
+categories: [ "Android" ]
 tags: [ "lint", "gradle" ]
 draft: false
 featured: false
