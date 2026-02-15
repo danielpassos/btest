@@ -5,5 +5,17 @@ title: "" # the name of your site, e.g. ACME Corp.
 permalink: /:title
 
 plugins:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-seo-tag
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  permalinks:
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
+  layouts:
+    category: category
+    tag: tag
