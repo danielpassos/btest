@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Tell Tailwind where your Jekyll files are */
+
+@source "../../_layouts/**/*.{html,md}";
+@source "../../_includes/**/*.{html,md}";
+@source "../../_posts/**/*.{md,markdown}";
+@source "../../*.{html,md,markdown}";
