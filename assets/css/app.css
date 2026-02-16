@@ -6,3 +6,5 @@
 @source "../../_includes/**/*.{html,md}";
 @source "../../_posts/**/*.{md,markdown}";
 @source "../../*.{html,md,markdown}";
+
+@import "./post.css";
