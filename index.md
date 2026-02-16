@@ -3,6 +3,8 @@ layout: default
 title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+<div class="p-10">
+  <h1 class="text-4xl font-bold text-blue-600">
+    Tailwind is working
+  </h1>
+</div>

@@ -1,3 +1,15 @@
+.post-cover {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .tag-badge {
   display: inline-block;
   background-color: #f3f3f3;
