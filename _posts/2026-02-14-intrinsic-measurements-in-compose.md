@@ -73,19 +73,17 @@ fun PharmacyCard(
 
                 Spacer(Modifier.height(24.dp))
 
-                Tag(
+                Tag(                    
+                    label = "View map"
                     onClick = onViewMapClick,
-                    label = { Text("View map") }
                 )
             }
 
-            Column {
-
+            Column(horizontalAlignment = Alignment.End) {
                 Chip(
-                    onClick = {},
-                    label = { Text("20M") }
+                    label = "20M"
                 )
-
+                
                 Spacer(Modifier.weight(1f))
 
                 IconButton(onClick = onCallClick) {
@@ -241,17 +239,8 @@ Row(
         // left content
     }
 
-    Column(
-        verticalArrangement = Arrangement.SpaceBetween
-    ) {
-        Chip(
-            onClick = {},
-            label = { Text("20M") }
-        )
-
-        IconButton(onClick = onCallClick) {
-            Icon(Icons.Default.Phone, contentDescription = null)
-        }
+    Column(horizontalAlignment = Alignment.End) {
+        // right content
     }
 }
 ```
