@@ -1,5 +1,5 @@
 url: "https://blog.passos.me"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/btest" # the subpath of your site, e.g. /blog
 title: "Daniel Passos"
 description: "A deep dive into modern mobile development, Kotlin Multiplatform, and Compose. Insights, experiments, and real-world lessons for engineers building the next generation of apps."
 
