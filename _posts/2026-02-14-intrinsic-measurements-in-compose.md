@@ -1,7 +1,6 @@
 ---
 layout: post
 date: '2026-02-14'
-cover: "/images/posts/intrinsic-measurements-in-compose/cover"
 title: "Intrinsic Measurements in Compose"
 summary: "When two siblings need to share height, Compose won’t solve it for you unless you understand intrinsics. In this deep dive, we explore how intrinsic measurement works and why it’s the right tool for cross-column alignment."
 categories:  ["Compose"]
