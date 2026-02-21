@@ -20,7 +20,7 @@ layout: default
   <footer class='mt-8'>
     <div class='flex flex-wrap gap-2'>
       {% for tag in page.tags %}
-      <a href='/tags/{{ tag | slugify }}' class='tag-badge' rel='tag'>{{ tag }}</a>
+      <a href='{{ site.baseurl }}/tags/{{ tag | slugify }}' class='tag-badge' rel='tag'>{{ tag }}</a>
       {% endfor %}
     </div>
   </footer>

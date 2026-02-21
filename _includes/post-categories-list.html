@@ -1,6 +1,6 @@
 <span class='flex items-center gap-1'>
   📁
   {% for category in include.post.categories %}
-  <a href='/categories/{{ category | slugify }}'>{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+  <a href='{{ site.baseurl }}/categories/{{ category | slugify }}'>{{ category }}</a>{% unless forloop.last %}, {% endunless %}
   {% endfor %}
 </span>
