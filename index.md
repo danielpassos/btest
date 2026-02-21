@@ -11,10 +11,7 @@ layout: default
         <article class="rounded-xl bg-surface dark:bg-surface-dark p-6 shadow-lg md:flex md:gap-6 hover:shadow-xl transition-shadow">
             <div class="md:w-1/2 mb-4 md:mb-0">
                 <a href="{{ post.url }}">
-                    <figure class="post-cover">
-                        <picture>
-                        </picture>
-                    </figure>
+                    {% include post-cover.html post=post %}
                 </a>
             </div>
             <div class="md:w-1/2 flex flex-col justify-center">
@@ -33,10 +30,7 @@ layout: default
         <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
             {% for post in posts %}
             <article>
-                <figure class="post-cover">
-                    <picture>
-                    </picture>
-                </figure>
+                {% include post-cover.html post=post %}
                 <h2 class="text-2xl font-semibold mt-4 text-text-primary dark:text-text-primary-dark mb-2">
                     <a href="{{ post.url }}" class="hover:underline">{{ post.title }}</a>
                 </h2>
