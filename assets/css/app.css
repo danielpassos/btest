@@ -1,4 +1,16 @@
 @import "tailwindcss";
+@import "./post.css";
+
+@theme {
+  --color-background: #ffffff;
+  --color-background-dark: #1c1c1c;
+  --color-text-primary: #040404;
+  --color-text-primary-dark: #ffffff;
+  --color-text-secondary: #444444;
+  --color-text-secondary-dark: #b4afb6;
+  --color-surface: #e6e7eb;
+  --color-surface-dark: #222222;
+}
 
 /* Tell Tailwind where your Jekyll files are */
 
@@ -6,8 +18,6 @@
 @source "../../_includes/**/*.{html,md}";
 @source "../../_posts/**/*.{md,markdown}";
 @source "../../*.{html,md,markdown}";
-
-@import "./post.css";
 
 :root {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
