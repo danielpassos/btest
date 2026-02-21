@@ -32,4 +32,9 @@ We recommend using [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versio
 To start the development server, run:
 ```bash
 bundle exec jekyll serve
-   ```
+```
+
+⚠️ Every time any CSS is changed, you need to run:
+```bash
+npx @tailwindcss/cli -i ./assets/css/app.css -o ./assets/css/main.css --minify
+```
