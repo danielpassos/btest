@@ -20,3 +20,11 @@ jekyll-archives:
   layouts:
     category: category
     tag: tag
+
+jekyll_feed:
+  title: "Daniel Passos"
+  description: "A deep dive into modern mobile development, Kotlin Multiplatform, and Compose. Insights, experiments, and real-world lessons for engineers building the next generation of apps."
+  author: "Daniel Passos"
+  feed:
+    icon: /images/icon.png
+    logo: /images/logo.png
